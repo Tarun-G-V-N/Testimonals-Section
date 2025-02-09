@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    height: 200vh;
+    font-family: "Barlow Semi Condensed", serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 30px auto;
+}
+
+.testimonal{
+    border-radius: 10px;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.name{
+    margin-top: 30px;
+}
+
+h3, p{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+p, .verified{
+    color: hsl(0, 0%, 81%);
+    font-weight: 400;
+}
+
+#Jeanette p, #Kira p, #Jeanette .verified, #Kira .verified{
+    color: hsl(217, 19%, 35%);
+}
+
+#Daniel{
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+    height:440px;
+    position: relative;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 25px;
+    box-shadow: 0px 15px 30px -5px #83a6d280;
+}
+
+#Jonathan{
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    height: 280px;
+    box-shadow: 0px 15px 30px -5px #83a6d280;
+}
+
+#Jeanette{
+    background-color: hsl(0, 0%, 100%);
+    height: 260px;
+    box-shadow: 0px 15px 30px -5px #83a6d280;
+}
+
+#Patrick{
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    height: 380px;
+    box-shadow: 0px 15px 30px -5px #83a6d280;
+}
+
+#Kira{
+    background-color: hsl(0, 0%, 100%);
+    height: 480px;
+    box-shadow: 0px 15px 30px -5px #83a6d280;
+}
+
+#Daniel .name{
+    padding-top: 30px;
+}
+
+#Jonathan .name{
+    padding-top: 30px;
+}
+
+#Jeanette .name{
+    padding-top: 30px;
+}
+
+#Patrick .name{
+    padding-top: 30px;
+}
+
+@media (min-width: 60em){
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+
+    #container{
+        display: grid;
+        grid-template-columns: 1000px 300px;
+   }
+
+   #smallerColumnOne{
+        display: grid;
+        grid-template-columns: 625px 325px;
+        gap: 30px;
+        padding-bottom: 25px;
+   }
+
+   #smallerColumnTwo{
+        display: grid;
+        grid-template-columns: 325px 625px;
+        gap: 30px;
+        padding-top: 25px;
+   }
+
+    #Daniel{
+        height:300px;
+    }
+
+    #Jonathan{
+        height:300px;
+    }
+
+    #Jeanette{
+        height:300px;
+    }
+
+    #Patrick{
+        height:300px;
+    }
+
+    #Kira{
+        height: 650px;
+    }
+    
+    #Daniel img{
+        margin-top: 10px;
+    }
+
+    #Daniel .name{
+        padding-top: 3px;
+        margin-top: 10px;
+    }
+    
+    #Jonathan .name{
+        padding-top: 3px;
+    }
+    
+    #Jeanette .name{
+        padding-top: 3px;
+    }
+
+    #Daniel img{
+        margin-top: 10px;
+    }
+    
+    #Patrick .name{
+        padding-top: 3px;
+        margin-top: 20px;
+    }
+}
